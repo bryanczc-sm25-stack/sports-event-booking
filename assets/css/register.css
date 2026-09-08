@@ -1,0 +1,212 @@
+body {
+    background-color: #000 !important;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+#card{
+    margin-top : 50px;
+    margin-bottom: 50px;
+}
+
+.card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#logo-link {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    max-width: 100%;
+}
+
+#logo-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 40px 20px 30px;
+}
+
+.triple {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.type-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 15px;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+.type p {
+    margin-bottom: 5px; 
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.type input {
+    width: 100%; 
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+
+.text{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    font-size: 45px;
+    margin : 0;
+    padding: 25px;
+}
+
+#global_card{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 
+    0 0 40px rgba(255, 255, 255, 0.3), 
+    0 0 60px rgba(255, 255, 255, 0.2);
+}
+
+
+.type p {
+    margin : 5px;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+}
+
+.btn.bkg {
+    width: 20%;
+    padding: 5px;
+    background-color: #000; 
+    color: white; 
+    border: 2px solid #000; 
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.btn.bkg:hover {
+    background-color: white; 
+    color: #000; 
+}
+
+
+
+#message {
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff0000; 
+    margin-top: 20px;
+    text-align: center;
+}
+
+#condition_phrase{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #385898; 
+    text-decoration: none; 
+}
+
+a:hover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+#para{
+   
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+ 
+   
+    #card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #card-logo {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .card-body {
+        margin: 10px 15px;
+        gap: 10px;
+    }
+
+    .type-container {
+        flex-direction: column;
+    }
+
+    .btn.bkg {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    #condition_phrase,
+    #para {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #message {
+        font-size: 13px;
+    }
+}
+

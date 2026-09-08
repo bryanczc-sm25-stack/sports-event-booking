@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40));
+  background-position: center;
+  background-size: center;
+  position: relative;
+}
+
+/*La navbar*/ 
+
+.navbar {
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-size: 25px;
+}
+
+.logo {
+  width: 160px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+}
+
+li a:hover {
+  background: white;
+  transition: 0.6s;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+#btn_logout{
+  background: black;
+  color : white;
+  border: 0px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#btn_logout:hover {
+  background: rgb(255,255,255);
+  transition: 0.6s;
+  color: black;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu-toggle:hover {
+  background-color: rgb(255, 255, 255);
+  color: #ccc;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* navbar done*/
+
+.content {
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.content h1 {
+  margin-top: 80px;
+  font-size: 90px;
+  font-weight: 800;
+}
+
+#btn_explore {
+  width: 200px;
+  padding: 15px;
+  margin: 20px 5px;
+  text-align: center;
+  border-radius: 25px;
+  color: black;
+  border: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#btn_explore:hover {
+  background-color: grey;
+  transition: 0.5s;
+  color: white;
+}
+
+
+
+.banner video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .banner video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/*About us css */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.highlight {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 3px 5px;
+  font-size: 30px;
+}
+
+.about-section p {
+padding-bottom: 20px;
+}
+
+.about-section h1 {
+  text-decoration: underline;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+}
+
+.container {
+  padding: 10px 16px 10px 16px;
+  flex-grow: 1; 
+  text-align: center;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  font-size: 30px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.row {
+  margin: 0;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.column {
+  flex: 1;
+  max-width: 30%;
+  box-sizing: border-box;
+  margin: 8px;
+  background-color : black;
+  color: black;
+}
+
+#text-head {
+  margin-top: 2px;
+  margin-bottom: 0px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 120px;
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    max-width: 45%;   
+  }
+}
+
+/*Feed back */ 
+#title-feedback{
+  text-decoration: underline;
+  color : white;
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+#feedback{
+  margin-top: 2px;
+  background-color: #000;
+}
+.container-feedback {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card-feedback {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  max-width: 320px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-feedback:hover {
+  transform: translateY(-5px);
+}
+
+.feedback-text {
+  font-size: 1rem;
+  color: #343a40;
+}
+
+.feedback-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+/* Carte "ajouter un feedback" */
+.add-card-feedback {
+  border: 2px dashed #007bff;
+  background-color: #e9f3ff;
+  cursor: pointer;
+}
+
+.add-icon-feedback {
+  color: #007bff;
+}
+
+.add-text-feedback {
+  color: #007bff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
+/*Pied de carte */
+.card-footer {
+  background-color: #f8f9fa;
+  border-top: 2px solid #dee2e6;
+  color: #6c757d !important;
+  padding: 1rem 1.5rem;
+}
+
+.card-footer div {
+  margin-bottom: 0.5rem;
+}
+
+.card-footer i {
+  color: #6c757d;
+  width: 20px;
+}
+
+.row-footer{
+  margin: 0;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer .social-icons a {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+footer .social-icons a:hover {
+  color: #ccc !important;
+}
+
+#footer{
+  margin-top : 0px;
+}
+
+#lien{
+  color : white;
+}
+
+
